@@ -18,6 +18,8 @@ BuildRequires : libxml2-dev
 BuildRequires : libxslt-dev
 BuildRequires : pypi(cython)
 BuildRequires : zlib-dev
+Provides: lxml
+Provides: lxml-python3
 
 %description
 What is lxml?
