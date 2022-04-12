@@ -4,7 +4,7 @@
 #
 Name     : pypi-lxml
 Version  : 4.8.0
-Release  : 86
+Release  : 87
 URL      : https://files.pythonhosted.org/packages/3b/94/e2b1b3bad91d15526c7e38918795883cee18b93f6785ea8ecf13f8ffa01e/lxml-4.8.0.tar.gz
 Source0  : https://files.pythonhosted.org/packages/3b/94/e2b1b3bad91d15526c7e38918795883cee18b93f6785ea8ecf13f8ffa01e/lxml-4.8.0.tar.gz
 Summary  : Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.
@@ -18,8 +18,6 @@ BuildRequires : libxml2-dev
 BuildRequires : libxslt-dev
 BuildRequires : pypi(cython)
 BuildRequires : zlib-dev
-Provides: lxml
-Provides: lxml-python3
 
 %description
 What is lxml?
@@ -64,7 +62,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1645117236
+export SOURCE_DATE_EPOCH=1649782546
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fno-lto "
 export FCFLAGS="$FFLAGS -fno-lto "
