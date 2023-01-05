@@ -4,7 +4,7 @@
 #
 Name     : pypi-lxml
 Version  : 4.9.2
-Release  : 99
+Release  : 100
 URL      : https://files.pythonhosted.org/packages/06/5a/e11cad7b79f2cf3dd2ff8f81fa8ca667e7591d3d8451768589996b65dec1/lxml-4.9.2.tar.gz
 Source0  : https://files.pythonhosted.org/packages/06/5a/e11cad7b79f2cf3dd2ff8f81fa8ca667e7591d3d8451768589996b65dec1/lxml-4.9.2.tar.gz
 Summary  : Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.
