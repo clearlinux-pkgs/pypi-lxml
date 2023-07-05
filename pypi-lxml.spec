@@ -4,10 +4,10 @@
 # Using build pattern: distutils3
 #
 Name     : pypi-lxml
-Version  : 4.9.2
-Release  : 102
-URL      : https://files.pythonhosted.org/packages/06/5a/e11cad7b79f2cf3dd2ff8f81fa8ca667e7591d3d8451768589996b65dec1/lxml-4.9.2.tar.gz
-Source0  : https://files.pythonhosted.org/packages/06/5a/e11cad7b79f2cf3dd2ff8f81fa8ca667e7591d3d8451768589996b65dec1/lxml-4.9.2.tar.gz
+Version  : 4.9.3
+Release  : 103
+URL      : https://files.pythonhosted.org/packages/30/39/7305428d1c4f28282a4f5bdbef24e0f905d351f34cf351ceb131f5cddf78/lxml-4.9.3.tar.gz
+Source0  : https://files.pythonhosted.org/packages/30/39/7305428d1c4f28282a4f5bdbef24e0f905d351f34cf351ceb131f5cddf78/lxml-4.9.3.tar.gz
 Summary  : Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.
 Group    : Development/Tools
 License  : BSD-3-Clause GPL-2.0
@@ -17,7 +17,6 @@ Requires: pypi-lxml-python3 = %{version}-%{release}
 BuildRequires : buildreq-distutils3
 BuildRequires : libxml2-dev
 BuildRequires : libxslt-dev
-BuildRequires : pypi(cython)
 BuildRequires : zlib-dev
 # Suppress stripping binaries
 %define __strip /bin/true
@@ -51,17 +50,16 @@ Summary: python3 components for the pypi-lxml package.
 Group: Default
 Requires: python3-core
 Provides: pypi(lxml)
-Requires: pypi(cython)
 
 %description python3
 python3 components for the pypi-lxml package.
 
 
 %prep
-%setup -q -n lxml-4.9.2
-cd %{_builddir}/lxml-4.9.2
+%setup -q -n lxml-4.9.3
+cd %{_builddir}/lxml-4.9.3
 pushd ..
-cp -a lxml-4.9.2 buildavx2
+cp -a lxml-4.9.3 buildavx2
 popd
 
 %build
@@ -69,7 +67,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1685556104
+export SOURCE_DATE_EPOCH=1688572307
 export GCC_IGNORE_WERROR=1
 export CFLAGS="$CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 export FCFLAGS="$FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
