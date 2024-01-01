@@ -6,10 +6,10 @@
 # autospec commit: c1050fe
 #
 Name     : pypi-lxml
-Version  : 4.9.4
-Release  : 106
-URL      : https://files.pythonhosted.org/packages/84/14/c2070b5e37c650198de8328467dd3d1681e80986f81ba0fea04fc4ec9883/lxml-4.9.4.tar.gz
-Source0  : https://files.pythonhosted.org/packages/84/14/c2070b5e37c650198de8328467dd3d1681e80986f81ba0fea04fc4ec9883/lxml-4.9.4.tar.gz
+Version  : 5.0.0
+Release  : 107
+URL      : https://files.pythonhosted.org/packages/80/2c/076fafd979728858829fb9ce2e13fa6367b6be9acc4da0cff6367aa6a1ce/lxml-5.0.0.zip
+Source0  : https://files.pythonhosted.org/packages/80/2c/076fafd979728858829fb9ce2e13fa6367b6be9acc4da0cff6367aa6a1ce/lxml-5.0.0.zip
 Summary  : Powerful and Pythonic XML processing library combining libxml2/libxslt with the ElementTree API.
 Group    : Development/Tools
 License  : BSD-3-Clause GPL-2.0
@@ -58,10 +58,10 @@ python3 components for the pypi-lxml package.
 
 
 %prep
-%setup -q -n lxml-4.9.4
-cd %{_builddir}/lxml-4.9.4
+%setup -q -n lxml-5.0.0
+cd %{_builddir}/lxml-5.0.0
 pushd ..
-cp -a lxml-4.9.4 buildavx2
+cp -a lxml-5.0.0 buildavx2
 popd
 
 %build
@@ -69,7 +69,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1703116608
+export SOURCE_DATE_EPOCH=1704141067
 export GCC_IGNORE_WERROR=1
 CLEAR_INTERMEDIATE_CFLAGS="$CLEAR_INTERMEDIATE_CFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
 CLEAR_INTERMEDIATE_FCFLAGS="$CLEAR_INTERMEDIATE_FFLAGS -fdebug-types-section -femit-struct-debug-baseonly -fno-lto -g1 -gno-column-info -gno-variable-location-views -gz=zstd "
