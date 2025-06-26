@@ -1,5 +1,5 @@
 PKG_NAME := pypi-lxml
-URL = https://files.pythonhosted.org/packages/76/3d/14e82fc7c8fb1b7761f7e748fd47e2ec8276d137b6acfe5a4bb73853e08f/lxml-5.4.0.tar.gz
+URL = https://files.pythonhosted.org/packages/c5/ed/60eb6fa2923602fba988d9ca7c5cdbd7cf25faa795162ed538b527a35411/lxml-6.0.0.tar.gz
 ARCHIVES = 
 
 include ../common/Makefile.common
